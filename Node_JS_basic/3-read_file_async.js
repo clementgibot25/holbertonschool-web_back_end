@@ -13,6 +13,8 @@ function countStudents(path) {
             for (let counter = 0; counter < lines.length; counter++) {
                 if (lines[counter].length > 0) students++;
             }
+
+            students = students - 1;
             
             console.log(`Number of students: ${students}`);
 
