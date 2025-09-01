@@ -21,6 +21,7 @@ function countStudents(path) {
       const classrooms = [];
 
       lines.slice(1).forEach((line) => {
+        if (line.length === 0) return;
         const parts = line.split(',');
         const field = parts[3];
 
@@ -33,6 +34,7 @@ function countStudents(path) {
         groupedStudents[field] = [];
       });
       lines.slice(1).forEach((line) => {
+        if (line.length === 0) return;
         const parts = line.split(',');
         const firstname = parts[0];
         const field = parts[3];
