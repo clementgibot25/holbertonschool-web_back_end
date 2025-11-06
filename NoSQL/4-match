@@ -1,2 +1,0 @@
-// MongoDB: Matches documents in a collection.
-db.school.find({name: "Holberton school"})
